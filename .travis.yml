@@ -3,8 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t jodha33/LearnDocker -f Dockerfile.dev .
+    - docker build -t jodha33/learndocker -f Dockerfile.dev .
 
 script:
-    -  docker run jodha33/LearnDocker npm run test -- --coverage
-    
+    -  docker run jodha33/learndocker npm run test -- --coverage
